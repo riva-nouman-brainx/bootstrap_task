@@ -1,0 +1,42 @@
+.nav_custom {
+  background-color: #0d4f9a;
+  height: 45.64px;
+}
+/* body {
+  font-size: var(--font-size-base, 16px);
+  font-family: var(
+    --font-stack-body,
+    "Lato",
+    "HelveticaNeue",
+    "Helvetica Neue",
+    sans-serif
+  );
+  color: var(--color-text, #0d4f9a);
+  line-height: 1.5;
+} */
+body {
+    font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
+}
+.dropdown-toggle::after {
+  content: none !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.search {
+  position: relative;
+}
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  padding-right: 30px; /* Adjust this value to accommodate the icon */
+}
+
+.search-icon {
+  position: relative;
+  top: 80;
+  left:5px;
+}
