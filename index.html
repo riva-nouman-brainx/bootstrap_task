@@ -10,16 +10,62 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha384-KyZXEAg3QhqLMpG8r+4FfRpwz8+Tpz1Ih0a0a2bz3Avu5Lw5D1T/K1Pffsf+2R5Q" crossorigin="anonymous">
-  ``
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 
 </head>
 
 <body>
+  <div id="topNav" class="container-fluid">
+    <div class="row d-flex">
+      <div class="col-6 d-flex align-items-center">
+        <div class="p-2"><img class="icon" src="nav_icon1" alt="left image"></div>
+        <div class="textTopNav pl-2">EVERY ORDER CAN HELP END CHILDHOOD HUNGER</div>
+      </div>
+      <div class="col-6 d-flex justify-content-end py-2">
+        <div>
+          <div class="dropdown d-flex">
+            <a><img src="chat-bubbles.png" class="icon"></a>
+            <button class="btn dropdown-toggle text-white textBody" style="font-size: 15px;" type="button"
+              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              CUSTOMER SUPPORT
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <a><img src="myAcc" class="icon"></a>
+        <div>
+          <div class="dropdown d-flex">
+            <button class="btn dropdown-toggle text-white textBody" style="font-size: 15px;" type="button"
+              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MY ACCOUNT
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+
+        </div>
+        <a><img src="cart.png" class="icon"></a>
+        <div>
+          <button class="btn text-white textBody" style="font-size: 15px;">
+            MY CART
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
   <div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <div>
-          <a class="navbar-brand" href="#"><img src="BioTrustLogo"></a>
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand px-5" href="#"><img src="BioTrustLogo" height="105px" width="100%"></a>
         </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
@@ -29,10 +75,12 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                SHOP
-              </a>
+              <div class="site-nav-first">
+                <a class="nav-link active dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  SHOP
+                </a>
+              </div>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">ALL PRODUCTS</a></li>
                 <li><a class="dropdown-item" href="#">PROTIENS</a></li>
@@ -45,15 +93,15 @@
 
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">QUALITY</a>
+            <li class="nav-item textBody">
+              <a class="nav-link active m-2" aria-current="page" href="#">QUALITY</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link active" href="#">MISSION</a>
+            <li class="nav-item textBody">
+              <a class="nav-link active m-2" href="#">MISSION</a>
             </li>
-            <li class="nav-item dropdown custom-dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <li class="no-chevron nav-item dropdown custom-dropdown textBody">
+              <a class="nav-link active dropdown-toggle blueText m-2" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 #BIOTRUST
               </a>
@@ -72,47 +120,16 @@
               </ul>
             </li>
           </ul>
-          <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">
-            <img class="search" src="search" ></button>
-        </form> -->
-        <div class="search-container">
-          <input type="text" class="search-input" placeholder="Search...">
-          <span class="search-icon"><img src="search"></span>
-        </div>
-        
-        </div>
-      </div>
+          <div class="form-group has-search d-flex" style="overflow: hidden;">
+            <div class="icon "><img src="search_fade" class="form-control-feedback"></div>
+            <input type="text" class="form-control" placeholder="Search all products...">
+          </div>
+
 
     </nav>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <div class="borderLine"></div>
 
 
 

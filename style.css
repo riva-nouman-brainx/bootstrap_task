@@ -1,42 +1,81 @@
-.nav_custom {
-  background-color: #0d4f9a;
-  height: 45.64px;
-}
-/* body {
-  font-size: var(--font-size-base, 16px);
-  font-family: var(
-    --font-stack-body,
-    "Lato",
-    "HelveticaNeue",
-    "Helvetica Neue",
-    sans-serif
-  );
-  color: var(--color-text, #0d4f9a);
-  line-height: 1.5;
-} */
-body {
-    font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
-}
-.dropdown-toggle::after {
-  content: none !important;
+body{
+  font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
 }
 
+.textTopNav{
+  letter-spacing: 1.5px;
+  text-shadow: unset;
+  font-size: 1.1rem;
+}
+.textBody a {
+  letter-spacing: 1.5px;
+  text-shadow: unset;
+  font-size: 15px;
+  color: #0d4f9a !important;
+}
+.no-chevron .dropdown-toggle::after {
+  content: none !important;
+}
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-.search {
-  position: relative;
-}
-.search-container {
+.has-search .form-control {
+  /* padding-right: 2.375rem; */
   position: relative;
 }
 
-.search-input {
-  padding-right: 30px; /* Adjust this value to accommodate the icon */
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.6rem;
+  height: 2.1rem;
+  line-height: 2.375rem;
+  text-align: center;
+  color: #aaa;
+  padding-right: 15px;
+  right: 0;
+}
+button{
+  color: #fff;
+}
+.text-white{ 
+  color: white;
+}
+.editShop a{
+  padding: px;
+
+}
+.site-nav-first {
+  background-color: #0d4f9a;
+  border-radius: 7px;
+  color: #fff;
+  padding: 15px;
+  padding-left: 20px;
+  margin-right: 25px !important;
+  margin-left: unset !important;
+}
+.site-nav-first {
+  padding: 7px;
 }
 
-.search-icon {
-  position: relative;
-  top: 80;
-  left:5px;
+#topNav{
+  background-color: #0d4f9a;
+  color: #fff;
+}
+
+.borderLine {
+  border: 3px solid #0d4f9a; /* Adjust the thickness and color as needed */
+  height: 5px;
+}
+.blueText{
+  color: #0d4f9a;
+}
+
+.icon{
+  height: 25px;
+  width: 30px;
+}
+.navbar{
+  padding: 0rem !important;
 }
