@@ -22,6 +22,9 @@ body{
 .has-search .form-control {
   /* padding-right: 2.375rem; */
   position: relative;
+  width: 358px;
+  height: 39px;
+  
 }
 
 .has-search .form-control-feedback {
@@ -29,12 +32,13 @@ body{
   z-index: 2;
   display: block;
   width: 2.6rem;
-  height: 2.1rem;
+  height: 2rem;
   line-height: 2.375rem;
   text-align: center;
   color: #aaa;
   padding-right: 15px;
   right: 0;
+  padding-top: 3px;
 }
 button{
   color: #fff;
@@ -42,10 +46,7 @@ button{
 .text-white{ 
   color: white;
 }
-.editShop a{
-  padding: px;
 
-}
 .site-nav-first {
   background-color: #0d4f9a;
   border-radius: 7px;
@@ -65,8 +66,8 @@ button{
 }
 
 .borderLine {
-  border: 3px solid #0d4f9a; /* Adjust the thickness and color as needed */
-  height: 5px;
+  border: 2px solid #0d4f9a; /* Adjust the thickness and color as needed */
+  height: 3px;
 }
 .blueText{
   color: #0d4f9a;
@@ -78,4 +79,144 @@ button{
 }
 .navbar{
   padding: 0rem !important;
+}
+.ageless {
+  letter-spacing: 0px;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: .5px 0 currentColor;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  width: 100%; /* Adjust the width as needed */
+  color: #0d4f9a;
+}
+.green-color {
+  color:#2bb34d !important;
+}
+.star {
+  margin-right: 5px; /* Add margin between stars */
+}
+a {
+  color: #2f84ed !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  font-size: 13px;
+}
+.zoom {
+  transition: transform .5s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+#OTP{
+  background-color: #0d4f9a;
+  color: white;
+  font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
+  border-radius: 5px;
+  height: 55px;
+  width: 450px;
+  text-align: center;
+
+}
+#save{
+  background-color: transparent;
+  color: #0d4f9a;
+  border-color: #0d4f9a;
+  border-radius: 5px;
+  height: 55px;
+  width: 450px;
+  text-align: center;
+}
+#sideBox1{
+  height: 255px;
+  width: 270px;
+  border-top: 2px solid #0d4f9a;
+  border-bottom: 2px solid #0d4f9a;
+  border-left: 2px solid #0d4f9a;
+  border-right: none;
+}
+#sideBox2{
+  height: 255px;
+  width: 270px;
+  border-top: 2px solid #0d4f9a;
+  border-bottom: 2px solid #0d4f9a;
+  border-left: none;
+  border-right: 2px solid #0d4f9a;
+}
+
+.midBox{
+  height: 300px;
+  width: 300px;
+  border-top: 1px solid #0d4f9a;
+  border-bottom: 5px solid #0d4f9a;
+  border-left: 5px solid #0d4f9a;
+  border-right: 5px solid #0d4f9a;
+}
+
+#divBgColor{
+  background-color: #0d4f9a;
+  height: 36px;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+}
+.cardText{
+  letter-spacing: 0px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  width: 100%; /* Adjust the width as needed */
+  color: #0d4f9a;
+}
+#amount{
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.amountGreen{
+  text-align: center;
+  color: #2bb34d;
+  font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 35px;
+  
+
+}
+.discRed{
+  text-align: center;
+  color: #db421e !important;
+  font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+
+}
+.row {
+  --bs-gutter-x: none;
+  --bs-gutter-y: 0;
+ 
+}
+.buttonGreen{
+  border-radius: 4px;
+  color: white;
+  background-color: #2bb34d;
+  border: none;
+  padding: 12px 40px;
+  bottom: 0;
+  font: 16px;
+  font-weight: 700;
 }
