@@ -1,5 +1,5 @@
 body{
-  font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
+  font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif) !important;
 }
 
 .textTopNav{
@@ -15,7 +15,15 @@ body{
 }
 .no-chevron .dropdown-toggle::after {
   content: none !important;
+  content: '\25BC'; /* Unicode for down-pointing triangle */
+  font-size: 2em; /* Adjust this value to increase or decrease the size */
 }
+.dropdown-toggle::after {
+  content: '\25BC'; /* Unicode for down-pointing triangle */
+  font-size: 2em; /* Adjust this value to increase or decrease the size */
+}
+
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -66,7 +74,7 @@ button{
 }
 
 .borderLine {
-  border: 2px solid #0d4f9a; /* Adjust the thickness and color as needed */
+  border: 3px solid #0d4f9a; /* Adjust the thickness and color as needed */
   height: 3px;
 }
 .blueText{
@@ -75,6 +83,10 @@ button{
 
 .icon{
   height: 25px;
+  width: 30px;
+}
+.iconNav{
+  height: 35px;
   width: 30px;
 }
 .navbar{
@@ -206,7 +218,7 @@ a {
 
 }
 .row {
-  --bs-gutter-x: none;
+  --bs-gutter-x: none !important;
   --bs-gutter-y: 0;
  
 }
@@ -219,4 +231,80 @@ a {
   bottom: 0;
   font: 16px;
   font-weight: 700;
+}
+.imgSize{
+  height: 150px;
+  width: 150px;
+}
+.communityText{
+  letter-spacing: .5px;
+  margin-bottom: 0;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: .5px 0 currentColor;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  width: 100%; /* Adjust the width as needed */
+  color: #0d4f9a;
+}
+#textDiv{
+letter-spacing: 0.1em;
+}
+.list li {
+  padding-bottom: 2px; /* Adjust this value to control the padding size */
+}
+.divBox{
+  
+  background-color: #003663!important;
+  color: #fff;
+  border-left: 0.5px solid var(--color-border,#e8e9eb);
+  border-right: 0.5px solid var(--color-border,#e8e9eb);
+  border-top: 2px solid var(--color-border,#e8e9eb);
+  border-bottom: 2px solid var(--color-border,#e8e9eb);  
+  text-align: center;
+}
+#divBox2{
+  background-color: #0d4f9a;
+}
+.imgIcon{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: -25px;
+}
+.imgStar{
+  Width: 500px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */  
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.vl{
+  border-right: 8px solid #2bb34d;
+  /* margin-top: 5px; */
+  height: 250px;
+  /* height: 350px; */
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.textFCR{
+  font-size: 56px;
+  color: white;
+  line-height: 60px;
+  font-weight: 700;
+  
+}
+.greenReview{
+  color: #2bb34d;
+  font-size: 22px;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 1% !important;
 }
