@@ -133,8 +133,13 @@ a {
   color: white;
   font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
   border-radius: 5px;
-  height: 55px;
-  width: 450px;
+  font-weight: 700;
+  /* height: 55px;
+  width: 450px; */
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
 
 }
@@ -143,21 +148,29 @@ a {
   color: #0d4f9a;
   border-color: #0d4f9a;
   border-radius: 5px;
-  height: 55px;
-  width: 450px;
+  padding-left:  125px;
+  padding-right: 125px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
+  /* height: 55px;
+  width: 450px; */
 }
 #sideBox1{
-  height: 255px;
-  width: 270px;
+  /* height: 255px;
+  width: 270px; */
+  padding-left: 25px;
+  padding-right: 25px;
   border-top: 2px solid #0d4f9a;
   border-bottom: 2px solid #0d4f9a;
   border-left: 2px solid #0d4f9a;
   border-right: none;
 }
 #sideBox2{
-  height: 255px;
-  width: 270px;
+  /* height: 255px;
+  width: 270px; */
+  padding-left: 25px;
+  padding-right: 25px;
   border-top: 2px solid #0d4f9a;
   border-bottom: 2px solid #0d4f9a;
   border-left: none;
@@ -165,8 +178,10 @@ a {
 }
 
 .midBox{
-  height: 300px;
-  width: 300px;
+  /* height: 300px;
+  width: 300px; */
+  /* padding-left: 25px;
+  padding-right: 25px; */
   border-top: 1px solid #0d4f9a;
   border-bottom: 5px solid #0d4f9a;
   border-left: 5px solid #0d4f9a;
@@ -179,6 +194,7 @@ a {
   color: white;
   font-weight: 900;
   font-size: 20px;
+
 }
 .cardText{
   letter-spacing: 0px;
@@ -228,14 +244,14 @@ a {
   background-color: #2bb34d;
   border: none;
   padding: 12px 40px;
-  bottom: 0;
   font: 16px;
-  font-weight: 700;
+  font-weight: 800;
+  
 }
-.imgSize{
+/* .imgSize{
   height: 150px;
   width: 150px;
-}
+} */
 .communityText{
   letter-spacing: .5px;
   margin-bottom: 0;
