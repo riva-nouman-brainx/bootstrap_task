@@ -100,9 +100,8 @@ button{
   font-size: 26px;
   font-weight: 700;
   font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
-  white-space: nowrap; /* Prevent text from wrapping */
   overflow: hidden; /* Hide overflowing text */
-  width: 100%; /* Adjust the width as needed */
+  /* width: 100%; Adjust the width as needed */
   color: #0d4f9a;
 }
 .green-color {
@@ -133,11 +132,12 @@ a {
   color: white;
   font-family: var(--font-stack-body,"Lato","HelveticaNeue","Helvetica Neue",sans-serif);
   border-radius: 5px;
+  font-size: 18px;
   font-weight: 700;
   /* height: 55px;
   width: 450px; */
-  padding-left: 125px;
-  padding-right: 125px;
+  padding-left: 120px;
+  padding-right: 120px;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
@@ -249,7 +249,7 @@ a {
   padding: 12px 40px;
   font: 16px;
   font-weight: 800;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   
 }
 /* .imgSize{
@@ -346,25 +346,22 @@ letter-spacing: 0.1em;
   transform: rotate(-90deg); /* Rotate and offset to center */  font-family: Open Sans !important;
   font-weight: 500;
   margin-left: -34px;
-
+ 
   }
-.fixed-sidebar {
-  position: sticky;
-  top: 20px; /* Adjust as needed */
-  height: fit-content;
-}
 
-.reviews-sidebar {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Additional styling for responsiveness */
-@media (max-width: 992px) {
-  .fixed-sidebar {
-    display: none; /* Hide the sidebar on smaller screens */
+  @media screen and (max-width: 992px) {
+    .topbar {
+      display: none;
+    }
+    .support{
+      position: absolute;
+      left: 0;
+    }
   }
-}
+  @media only screen and (min-width: 768px) and (max-width:992px){
+    .textTopNav{
+      font-size: 24px;
+      letter-spacing: 1.5px;
+      
+    }
+  }
