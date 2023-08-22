@@ -159,8 +159,8 @@ a {
 #sideBox1{
   /* height: 255px;
   width: 270px; */
-  padding-left: 25px;
-  padding-right: 25px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
   border-top: 2px solid #0d4f9a;
   border-bottom: 2px solid #0d4f9a;
   border-left: 2px solid #0d4f9a;
@@ -169,8 +169,8 @@ a {
 #sideBox2{
   /* height: 255px;
   width: 270px; */
-  padding-left: 25px;
-  padding-right: 25px;
+  /* padding-left: 25px;
+  padding-right: 25px;  */
   border-top: 2px solid #0d4f9a;
   border-bottom: 2px solid #0d4f9a;
   border-left: none;
@@ -180,6 +180,7 @@ a {
 .midBox{
   /* height: 300px;
   width: 300px; */
+  /* z-index: 1; */
   /* padding-left: 25px;
   padding-right: 25px; */
   border-top: 1px solid #0d4f9a;
@@ -194,6 +195,8 @@ a {
   color: white;
   font-weight: 900;
   font-size: 20px;
+  /* z-index: 2;
+  position: relative; */
 
 }
 .cardText{
@@ -246,6 +249,7 @@ a {
   padding: 12px 40px;
   font: 16px;
   font-weight: 800;
+  white-space: nowrap;
   
 }
 /* .imgSize{
@@ -323,4 +327,29 @@ letter-spacing: 0.1em;
 .col-2 {
   flex: 0 0 auto;
   width: 1% !important;
+}
+
+.container-fluid{
+  --bs-gutter-x: 0rem !important;
+}
+
+.fixed-sidebar {
+  position: sticky;
+  top: 20px; /* Adjust as needed */
+  height: fit-content;
+}
+
+.reviews-sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 992px) {
+  .fixed-sidebar {
+    display: none; /* Hide the sidebar on smaller screens */
+  }
 }
