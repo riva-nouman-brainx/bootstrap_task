@@ -333,6 +333,21 @@ letter-spacing: 0.1em;
   --bs-gutter-x: 0rem !important;
 }
 
+.divSideBar{
+  background-color: #0d4f9a !important;
+  color: white;
+  position: fixed;
+  top: 252px;
+  z-index: 799;
+  left: 0 !important;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 14px;
+  transform: rotate(-90deg); /* Rotate and offset to center */  font-family: Open Sans !important;
+  font-weight: 500;
+  margin-left: -34px;
+
+  }
 .fixed-sidebar {
   position: sticky;
   top: 20px; /* Adjust as needed */
