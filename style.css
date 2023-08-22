@@ -136,10 +136,10 @@ a {
   font-weight: 700;
   /* height: 55px;
   width: 450px; */
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   text-align: center;
 
 }
@@ -148,17 +148,17 @@ a {
   color: #0d4f9a;
   border-color: #0d4f9a;
   border-radius: 5px;
-  padding-left:  125px;
-  padding-right: 125px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left:  7.5vw;
+  padding-right: 7.5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   text-align: center;
   /* height: 55px;
   width: 450px; */
 }
 #sideBox1{
-  /* height: 255px;
-  width: 270px; */
+  height: 27vh;
+  width: 16vw;
   /* padding-left: 25px;
   padding-right: 25px; */
   border-top: 2px solid #0d4f9a;
@@ -167,8 +167,8 @@ a {
   border-right: none;
 }
 #sideBox2{
-  /* height: 255px;
-  width: 270px; */
+  height: 27vh;
+  width: 16vw;
   /* padding-left: 25px;
   padding-right: 25px;  */
   border-top: 2px solid #0d4f9a;
@@ -178,8 +178,8 @@ a {
 }
 
 .midBox{
-  /* height: 300px;
-  width: 300px; */
+  height: 35vh;
+  width: 18vw !important;
   /* z-index: 1; */
   /* padding-left: 25px;
   padding-right: 25px; */
@@ -246,7 +246,7 @@ a {
   color: white;
   background-color: #2bb34d;
   border: none;
-  padding: 12px 40px;
+  padding: 1vh 2vw;
   font: 16px;
   font-weight: 800;
   /* white-space: nowrap; */
@@ -305,15 +305,11 @@ letter-spacing: 0.1em;
   overflow: clip;
 }
 .vl{
-  border-right: 8px solid #2bb34d;
-  /* margin-top: 5px; */
-  height: 250px;
-  /* height: 350px; */
-  margin-left: 25px;
-  margin-right: 25px;
+  border-left: 8px solid #2bb34d;
+
 }
 .textFCR{
-  font-size: 56px;
+  font-size: 3.5rem;
   color: white;
   line-height: 60px;
   font-weight: 700;
@@ -321,7 +317,7 @@ letter-spacing: 0.1em;
 }
 .greenReview{
   color: #2bb34d;
-  font-size: 22px;
+  font-size: 1.4rem;
 }
 
 .col-2 {
@@ -332,7 +328,9 @@ letter-spacing: 0.1em;
 .container-fluid{
   --bs-gutter-x: 0rem !important;
 }
-
+.textRight{
+  text-align: right;
+}
 .divSideBar{
   background-color: #0d4f9a !important;
   color: white;
@@ -348,6 +346,12 @@ letter-spacing: 0.1em;
   margin-left: -34px;
  
   }
+  .banner{
+    width: 30vw;
+  }
+  .testClass{
+    display: none;
+  }
 
   @media screen and (max-width: 992px) {
     .topbar {
@@ -357,11 +361,20 @@ letter-spacing: 0.1em;
       position: absolute;
       left: 0;
     }
+    .testClass{
+      display: block;
+    }
   }
   @media only screen and (min-width: 768px) and (max-width:992px){
     .textTopNav{
       font-size: 24px;
       letter-spacing: 1.5px;
       
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .banner{
+      width: 70vw;
     }
   }
