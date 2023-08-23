@@ -34,7 +34,9 @@ body{
   height: 39px;
   
 }
-
+.widClass{
+  width: 50%;
+}
 .has-search .form-control-feedback {
   position: absolute;
   z-index: 2;
@@ -157,7 +159,7 @@ a {
   width: 450px; */
 }
 #sideBox1{
-  height: 27vh;
+  /* height: 27vh; */
   width: 16vw;
   /* padding-left: 25px;
   padding-right: 25px; */
@@ -167,7 +169,7 @@ a {
   border-right: none;
 }
 #sideBox2{
-  height: 27vh;
+  /* height: 27vh; */
   width: 16vw;
   /* padding-left: 25px;
   padding-right: 25px;  */
@@ -178,7 +180,7 @@ a {
 }
 
 .midBox{
-  height: 35vh;
+  /* height: 35vh; */
   width: 18vw !important;
   /* z-index: 1; */
   /* padding-left: 25px;
@@ -331,6 +333,9 @@ letter-spacing: 0.1em;
 .textRight{
   text-align: right;
 }
+.mdRight{
+  display: flex;
+}
 .divSideBar{
   background-color: #0d4f9a !important;
   color: white;
@@ -346,35 +351,106 @@ letter-spacing: 0.1em;
   margin-left: -34px;
  
   }
-  .banner{
-    width: 30vw;
+.banner{
+  width: 30vw;
+  margin-top: 5vh;
+}
+.testClass{
+  display: none;
+}
+.watchPV{
+  display:none;
+}
+
+.green-line{
+  border-top:none;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .widClass{
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .topbar {
+    display: none;
+  }
+  .support{
+    position: absolute;
+    left: 0;
   }
   .testClass{
     display: none;
   }
+  .watchPV{
+    display: block;
+    width: 30vw;
+    margin-top: 2vh;
+    }
+  .mdRight{
+    display: none !important;
+  }
+  .vl{
+    /* border-top: 14px solid #2bb34d; */
+    border-left: none;      
+    /* margin-right: 3rem;
+    margin-left: 3rem;*/
+  } 
 
-  @media screen and (max-width: 992px) {
-    .topbar {
-      display: none;
-    }
-    .support{
-      position: absolute;
-      left: 0;
-    }
-    .testClass{
-      display: block;
-    }
+  .green-line{
+    border-top: 8px solid #2bb34d;
+    
+    
   }
-  @media only screen and (min-width: 768px) and (max-width:992px){
-    .textTopNav{
-      font-size: 24px;
-      letter-spacing: 1.5px;
-      
-    }
-  }
+  .text-2{
+    font-size: 21px;
+    color: #003663;
+    font-weight: 700;
 
-  @media screen and (max-width: 768px) {
-    .banner{
-      width: 70vw;
-    }
   }
+  .text-3{
+    font-size: 21px;
+    color: black;
+  }
+  .box-side{
+    border: 2px solid #003663;
+  }
+  .box-mid{
+    border: 4px solid #2bb34d;
+  }
+  
+
+
+
+}
+@media only screen and (min-width: 768px) and (max-width:992px){
+  .textTopNav{
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    
+  }
+  .widClass{
+    width: 50vw;
+  }
+  
+
+}
+
+@media screen and (max-width: 768px) {
+  .widClass{
+    width: 90vw;
+  }
+  .watchPV{
+    display: block;
+    width: 35vw;
+    margin-top: 4vh;
+    margin-bottom: 0vh;
+      }
+  .last-sec{
+    display: flex;
+    flex-direction: row !important;
+    
+  }
+}
